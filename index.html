@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="row">
+            <div class="game-board">
+                <br>
+                <table id="board"></table>
+            </div>
+
+            <div class="board-space">
+                <br>
+                <table id="board-code"></table>
+                <button id="copy-btn">Copiar código</button>
+                <form>
+                    <label for="codigo">Introduce el código:</label>
+                    <input type="text" id="codigo" name="codigo">
+                    <button type="button" id="enviar">Enviar</button>
+                </form>
+            </div>
+
+            <!-- <div class="slidecontainer">
+                <input type="range" min="6" max="50" value="28" class="slider" id="size-manual">
+            </div>
+            <div class="size-manual-space">
+                <br>
+                <table id="size-manual-table"></table>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="10" max="400" value="205" class="slider" id="bomb-manual">
+            </div>
+            <div class="bomb-manual-space">
+                <br>
+                <table id="bomb-manual-table"></table>
+            </div> -->
+        </div>
+    </div>
+    <section id="footer">
+        <div id="start"><img src="images/start.png"></div>
+        <div id="size-btns">
+            <div id="size-btns"><button id="size-9"><img src="images/easy.png"> Easy</button></div>
+            <div id="size-btns"><button id="size-16"><img src="images/medium.png"> Medium</button></div>
+            <div id="size-btns"><button id="size-30"><img src="images/hard.png"> Hard</button></div>
+        </div>
+        <div id="clock"><em>"Shift + Click"</em></strong> to toggle <img src="images/flag.png"></div>
+    </section>
+    <script src="js/cell.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
